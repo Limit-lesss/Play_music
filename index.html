@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1464c4a7e8.js" crossorigin="anonymous"></script>
+    <title>Music_player</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="navBar">
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="media/KK.jpg" id="song_img">
+        <h1>Dil Kyun Yeh Mera Shore Kare</h1>
+        <p>KK(Krishnakumar Kunnath)</p>
+       <audio id="song" >
+            <source src="media/Dil Kyun Yeh Mera - Kites 320 Kbps.mp3" type="audio/mpeg">
+       </audio>
+       <input type="range"  id="progress" value="0">
+       <div id="volumeDiv"><i class="fa-solid fa-volume-low"></i><input type="range"  id="volume" value="100"></div>
+       <div class="controls">
+            <div>
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div onclick="playPause()">
+                <i class="fa-solid fa-play " id="controlPlay"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
